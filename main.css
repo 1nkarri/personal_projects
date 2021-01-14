@@ -1,0 +1,99 @@
+:root{
+    --color-background: #FBFBFE;
+    --color-text: #2A3B47;
+    --color-white: #FFFFFF;
+    --alternative-color-text: hsl(0, 0%, 59%);
+    --color-line: hsl(227, 10%, 90%);
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+h2,h3,p{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-background);
+}
+.projects-container{
+    display: grid;
+    grid-template: repeat(6, 25rem) / 22.5rem;
+    justify-content: center;
+    height: 100vh;
+    gap: 2rem;
+}
+.projects-container-title{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-text);
+}
+.card{
+    display: grid;
+    grid-template-rows: 12rem 11rem 2rem;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-header{
+    grid-area: 1 /1 ; 
+    margin: 0;
+    display: flex;
+}
+.card-header-image{
+    width: 100%;
+    display: block;
+}
+.card-body{
+    grid-area: 2/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid var(--color-line);
+}
+.card-body-title{
+    margin: 1rem 1rem 0.5rem 1rem;
+    color: var(--color-text);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.card-body-description{
+    font-size: 1.2rem;
+    margin: 1rem;
+    align-items: center;
+    color: var(--alternative-color-text);
+}
+.card-footer{
+    background-color: #F7F7F7;
+    grid-area: 3/1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@media screen and (min-width:480px){
+    .projects-container{
+        grid-template-columns: repeat(2, 22.5rem);
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:768px){
+    .projects-container{
+        grid-template-columns: repeat(3, 22.5rem);
+        justify-content: center;
+    }
+}

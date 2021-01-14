@@ -26,7 +26,7 @@ body{
 }
 .projects-container{
     display: grid;
-    grid-template: repeat(6, 25rem) / 22.5rem;
+    grid-template: repeat(6, 30rem) / 27.5rem;
     justify-content: center;
     height: 100vh;
     gap: 2rem;
@@ -42,7 +42,7 @@ body{
 }
 .card{
     display: grid;
-    grid-template-rows: 12rem 11rem 2rem;
+    grid-template-rows: 15rem 10rem 5rem;
     background-color: var(--color-white);
     border-radius: 15px;
     overflow: hidden;
@@ -84,16 +84,28 @@ body{
     justify-content: space-evenly;
     align-items: center;
 }
+@media screen and (min-width:320px){
+    .projects-container{
+        grid-template: repeat(6, 30rem) / repeat(1, 27.5rem);
+        justify-content: center;
+    }
+}
 @media screen and (min-width:480px){
     .projects-container{
-        grid-template-columns: repeat(2, 22.5rem);
+        grid-template: repeat(6, 25rem) / repeat(2, 22.5rem);
         justify-content: center;
+    }
+    .card{
+        grid-template-rows: 12rem 11rem 2rem;
     }
 }
 
 @media screen and (min-width:768px){
     .projects-container{
-        grid-template-columns: repeat(3, 22.5rem);
+        grid-template: repeat(6, 25rem) / repeat(3, 22.5rem);
         justify-content: center;
+    }
+    .card{
+        grid-template-rows: 12rem 11rem 2rem;
     }
 }

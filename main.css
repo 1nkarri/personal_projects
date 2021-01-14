@@ -90,10 +90,29 @@ body{
         justify-content: center;
     }
 }
+@media screen and (min-width:375px){
+    .projects-container{
+        grid-template: repeat(6, 35rem) / repeat(1, 32.5rem);
+        justify-content: center;
+    }
+    .card{
+        grid-template-rows: 16rem 13rem 6rem;
+    }
+}
+@media screen and (min-width:425px){
+    .projects-container{
+        grid-template: repeat(6, 40rem) / repeat(1, 37.5rem);
+        justify-content: center;
+    }
+    .card{
+        grid-template-rows: 20rem 14rem 6rem;
+    }
+}
 @media screen and (min-width:480px){
     .projects-container{
         grid-template: repeat(6, 25rem) / repeat(2, 22.5rem);
         justify-content: center;
+        gap: 1.5rem;
     }
     .card{
         grid-template-rows: 12rem 11rem 2rem;

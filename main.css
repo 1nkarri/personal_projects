@@ -12,7 +12,7 @@ html{
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+box-sizing: inherit;
 }
 h2,h3,p{
     margin: 0;
@@ -55,7 +55,7 @@ body{
 }
 
 .card-header{
-    grid-area: 1 /1 ; 
+    grid-area: 1 /1 ;
     margin: 0;
     display: flex;
 }

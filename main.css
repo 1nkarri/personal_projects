@@ -121,7 +121,7 @@ body{
         justify-content: center;
     }
     .card{
-        grid-template-rows: 20rem 14rem 6rem;
+        grid-template-rows: 21rem 13rem 6rem;
     }
 }
 @media screen and (min-width:480px){

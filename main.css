@@ -112,29 +112,29 @@ body{
         justify-content: center;
     }
     .card{
-        grid-template-rows: 17rem 9rem 6rem;
+        grid-template-rows: 16rem 10rem 6rem;
     }
 }
 @media screen and (min-width:425px){
     .projects-container{
-        grid-template: repeat(6, 37rem) / repeat(1, 37.5rem);
+        grid-template: repeat(6, 34rem) / repeat(1, 37.5rem);
         justify-content: center;
     }
     .card-body-description{
         font-size: 1.3rem;
     }
     .card{
-        grid-template-rows: 22rem 9rem 6rem;
+        grid-template-rows: 19rem 9rem 6rem;
     }
 }
 @media screen and (min-width:480px){
     .projects-container{
-        grid-template: repeat(6, 27rem) / repeat(2, 22.5rem);
+        grid-template: repeat(6, 28rem) / repeat(2, 22.5rem);
         justify-content: center;
         gap: 1.5rem;
     }
     .card{
-        grid-template-rows: 12rem 9rem 6rem;
+        grid-template-rows: 12rem 10rem 6rem;
     }
 }
 
@@ -149,4 +149,7 @@ body{
     .card{
         grid-template-rows: 12rem 10rem 6rem;
     }
+}
+footer{
+    grid-area: 1/2;
 }
